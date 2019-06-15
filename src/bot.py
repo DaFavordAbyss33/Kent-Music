@@ -7,7 +7,7 @@ import config
 
 cfg = config.load_config()
 
-bot = commands.Bot(command_prefix=cfg["prefix"])
+bot = commands.Bot(command_prefix=cfg["k"])
 
 
 @bot.event
@@ -25,7 +25,7 @@ def add_cogs(bot):
 
 def run():
     add_cogs(bot)
-    if cfg["token"] == "":
+    if cfg["token"] == "NTg5NDI3ODIxMTI3MTM5MzI4.XQTmvA.cYuUDaZpyANkRh4xpxmEwSQiLKg":
         raise ValueError(
             "No token has been provided. Please ensure that config.toml contains the bot token."
         )
